@@ -8,21 +8,30 @@
   <body>
     <div id="root">
       <header>
+        <img class="logo" src="logo.png">
         <h1> VALIDAÇÃO DE CARTÃO
         </h1>
       </header>
-    </div>
-    <div class="first"> </div>
-      <div class="validator">
+    <main>
       </div>
-    
-      <div class="img">
-      <img src="cards.jpg"> 
+      <div class="first"> 
+        
+        <div class="validator">
+          <label for="cardnumber" class="cardnumberlabel">Insira o número do cartão:</label>
+          <input type="number" id="cardnumber" name="cardnumber" class="cardnumber" placeholder="xxxxxxxxxxxxxxxxxxx" required
+            minlength="13" maxlength="19" size="17"> <br>
+          <button type="submit" id="button1" class="button1" onclick="getcardnumber(1)">Checar</button>
+            <p> </p> <br>
+            <small> *O número deve ser escrito sem espaços ou pontuação.</small>
+        </div>
+        <div class="img">
+        <img src="cards.jpg"> 
+        </div>
+      
       </div>
-    
-    <div class="text">
-
-    </div>
+      <div class="text">
+      </div>
+  </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>

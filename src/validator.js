@@ -1,4 +1,7 @@
-const validator = {
+//import {} from './index.js'
+
+const validator = { 
+ 
   // ...
 };
 
