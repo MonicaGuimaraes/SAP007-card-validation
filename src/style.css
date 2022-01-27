@@ -46,7 +46,6 @@ h1{
 .first{
     display: flex;
     flex-direction: column;
-    align-items: column;
     width: 100%;
     position: absolute;
     right: 0pt;
@@ -59,7 +58,7 @@ h1{
 
 }
 
-.validator {
+.validator { 
     box-shadow: inset 0 0 1em rgb(37, 149, 223), 0 0 1em rgb(174, 179, 185);
     background: #01B0EB;
     position: absolute;
@@ -78,11 +77,23 @@ h1{
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+    
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.button1 {
+    padding: 5px 70px;
+}
 .img {
     display: flex;
     flex-direction: column;
-    align-items: column;
+
     position: absolute;
     right: 0;
     top: 0;

@@ -1,21 +1,24 @@
 import validator from './validator.js'
-console.log(validator)
+
+
 
 const button1 = document.getElementById("button1")
-let cardnumber
+const receberNum = document.getElementById("cardnumber")
+let cardNum
 let tamanho
 let listNumberCard
 
- /**function getcardnumber(id){
-    cardnumber = document.getElementById("cardnumber").value
-    console.log(cardnumber)
-    return cardnumber
+function getcardnumber(){
+    cardNum = receberNum.value
+    validator.valid(cardNum)
 }
+button1.addEventListener("click", getcardnumber)
 
-const numbercard = getcardnumber(id)
-tamanho = numbercard.length
-listNumberCard = Array.from(numbercard) 
-console.log(listNumberCard, tamanho)
+
+
+
+
+//tamanho = cardNum.length
+//listNumberCard = Array.from(cardnumber) 
+//console.log(listNumberCard, tamanho)
 //for (var numberss = "" in listNumberCard)*/
-
-// atualizar esse código com o arquivo de teste
