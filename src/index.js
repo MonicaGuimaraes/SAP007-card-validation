@@ -8,7 +8,8 @@ let cardNum
 
 function getcardnumber(){
    cardNum = receberNum.value
-   validator.valid(cardNum)
+   validator.maskify(cardNum)
+   validator.isValid(cardNum)
  }
 button1.addEventListener("click", getcardnumber)
 

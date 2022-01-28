@@ -27,7 +27,6 @@ header {
     top: 0;
     z-index: 6; /** propriedade que mostra a camada **/
     align-items: center;
-    -ms-flex-pack: center;
     display: -ms-flexbox;
     display: flex;
     color: #000000; 
