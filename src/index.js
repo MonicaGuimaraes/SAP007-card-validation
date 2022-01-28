@@ -5,13 +5,11 @@ import validator from './validator.js'
 const button1 = document.getElementById("button1")
 const receberNum = document.getElementById("cardnumber")
 let cardNum
-let tamanho
-let listNumberCard
 
 function getcardnumber(){
-    cardNum = receberNum.value
-    validator.valid(cardNum)
-}
+   cardNum = receberNum.value
+   validator.valid(cardNum)
+ }
 button1.addEventListener("click", getcardnumber)
 
 
