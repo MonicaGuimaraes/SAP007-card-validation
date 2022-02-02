@@ -1,5 +1,3 @@
-//import {} from './index.js'
-
 const validator = { 
    maskify: function(nmber){
      let mask = ""
@@ -10,7 +8,7 @@ const validator = {
         mask= mask + "#"
       }
      }
-     return mask
+     return mask//, console.log(mask)
    }
 
   ,isValid: function(numeroCartao){
@@ -31,10 +29,10 @@ const validator = {
       }
     }
     if (sum % 10 === 0){
-      return numeroCartao = true
+      return numeroCartao = true //, console.log("True")
 
     }else{
-      return numeroCartao = false
+      return numeroCartao = false //, console.log("False")
     }
 
     // return console.log(cardListRev, sum)

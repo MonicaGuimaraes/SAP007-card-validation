@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <header>
-        <img class="logo" src="logo.png">
-        <h1> VALIDAÇÃO DE CARTÃO
-        </h1>
-      </header>
+
+<head>
+  <link rel="icon" sizes="16x16" href="img/favicon.png">
+  <meta charset="UTF-8" />
+  <title>CartoBank</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="root">
+    <header>
+      <img class="logo" src="img/logob.png">
+      <h1> CARTO BANK
+      </h1>
+    </header>
     <main>
-      </div>
-      <div class="first"> 
-        
-        <div class="validator">
-          <label for="cardnumber" class="cardnumberlabel">Insira o número do cartão:</label>
-          <input type="number" id="cardnumber" name="cardnumber" class="cardnumber" placeholder="xxxxxxxxxxxxxxxxxxx"
-            minlength="13" maxlength="19" size="17"> <br>
-          <button type="submit" id="button1" class="button1">Checar</button>
-            <p> </p> <br>
-            <small> *O número deve ser escrito sem espaços ou pontuação.</small>
-        </div>
-        <div class="img">
-        <img src="cards.jpg"> 
-        </div>
+  </div>
+  <div class="first">
+
+    <div class="validator div">
+
+      <label for="cardnumber" class="cardnumberlabel">Insira o número do cartão:</label>
+      <input type="text" id="cardnumber" name="cardnumber" class="cardnumber" placeholder="Seu número de cartão." required
+        minlength="13" maxlength="16" size="17"><!--onkeypress="return press(event)"-->
+      <p id="span" class="span"></p> 
+      <button type="submit" id="button1" value="cardnumber" class="button1">CHECAR</button>
+      <br><small> O número deve ser escrito sem espaços ou pontuação.</small>
       
-      </div>
-      <div class="text">
-      </div>
+    </div>
+    <div class="read div">
+      <h2>Recebi meu cartão e agora?</h2>
+      <br>
+      <p>Agora que já está logado em sua conta basta inserir o número do cartão.
+        Após checarmos o número iremos continuar o procedimento.</p>
+      <br>
+      <p>Não precisa sair de casa ou muito menos perder tempo no telefone para desbloquear!
+        Continue seguindo os passos e no final digite sua senha eletrônica de novo!</p>
+    </div>
+
+  </div>
+  <div class="text" id="result">
+  </div>
+
   </main>
-    <script src="index.js" type="module"></script>
-  </body>
+
+  <footer>
+    <p>Desenvolvido por Mônica</p>
+  </footer>
+
+  <!--<script>// Precisei declarar a função aqui pois quando eu a declarava no index.js, 
+      //ela não parecia estar sendo declarada globalmente. E quando eu a chamava 
+      //para o evento onkeypress não funcionava, também não consegui fazer funcionar com evento de escuta keypress o charCode 
+      //ficava riscado e dava como preterido. Não sei se tem algo relacionado ao type module de como o arquivo index 
+      //foi linkado aqui no index.html
+      // const numberNo = document.getElementById("noNumber")
+      function press(event){
+        let x = event.charCode
+        if (x >= 48 && x <= 57) {
+          return true
+        }else{
+          return false
+        }
+      }
+    </script>-->
+
+  <script src="index.js" type="module"></script>
+
+</body>
+
 </html>
