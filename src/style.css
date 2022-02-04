@@ -53,11 +53,14 @@ h1{
     max-height: 1000px;
     left: 0pt;
     top: 130px;
-    background: url(./img/fundoverde.png);
     box-shadow: 0 0 1em rgb(194, 200, 206);
     font-size: 0;
 
 }
+.imgg{
+    top: 0;
+}
+
 .read{
     z-index: 2;
     width: 50%;
