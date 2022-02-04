@@ -16,30 +16,37 @@
   </header>
   <main>
     <div class="first">
-      <img class="first imgg" src="img/fundoverde.png">
+      <img class="first imgg" src="./img/fundoverde.png">
 
       <div class="validator div">
-
-        <label for="cardnumber" class="cardnumberlabel">Insira o número do cartão:</label>
-        <input type="text" id="cardnumber" name="cardnumber" class="cardnumber" placeholder="Seu número de cartão." required
-          minlength="13" maxlength="16" size="17"><!--onkeypress="return press(event)"-->
-        <p id="span" class="span"></p> 
-        <button type="submit" id="button1" value="cardnumber" class="button1">CHECAR</button>
-        <br><small> O número deve ser escrito sem espaços ou pontuação.</small>
-        
+        <section>
+          <label for="cardnumber" class="cardnumberlabel">Insira o número do cartão:</label>
+          <input type="text" id="cardnumber" name="cardnumber" class="cardnumber" placeholder="Seu número de cartão."
+            required minlength="13" maxlength="16" size="17"><!--onkeypress="return press(event)"-->
+          <p id="span" class="span"></p>
+          <button type="submit" id="button1" value="cardnumber" class="button1">CHECAR</button>
+          <br><small> O número deve ser escrito sem espaços ou pontuação.</small>
+        </section>
       </div>
+
       <div class="read div">
-        <h2>Recebi meu cartão e agora?</h2>
-        <br>
-        <p>Agora que já está logado em sua conta basta inserir o número do cartão.
-          Após checarmos o número iremos continuar o procedimento.</p>
-        <br>
-        <p>Não precisa sair de casa ou muito menos perder tempo no telefone para desbloquear!
-          Continue seguindo os passos e no final digite sua senha eletrônica de novo!</p>
+        <section>
+          <article>
+            <h2>Recebi meu cartão e agora?</h2>
+            <br>
+            <p>Agora que já está logado em sua conta basta inserir o número do cartão.
+              Após checarmos o número iremos continuar o procedimento.</p>
+            <br>
+            <p>Não precisa sair de casa ou muito menos perder tempo no telefone para desbloquear!
+              Continue seguindo os passos e no final digite sua senha eletrônica de novo!</p>
+          </article>    
+        </section>
       </div>
 
     </div>
+
     <div class="result" id="result">
+      <button type="click" class="button2">Nova consulta</button>
     </div>
 
   </main>
