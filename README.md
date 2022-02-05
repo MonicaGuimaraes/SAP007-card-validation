@@ -24,9 +24,9 @@ ser multiplicados por dois; se esse número for maior ou igual a 10, devemos
 adicionar os dígitos do resultado; o número a verificar será válido se a soma de
 seus dígitos finais for um múltiplo de 10.
 
-![gráfico do algoritmo de
-Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
-
+<p align="center">
+<img src="./imagensreadme/thumb.png" alt="LUHN" width="300px"/>
+</p>
 ---
 
 ## 2. Resumo do projeto
@@ -84,18 +84,18 @@ Como a proposta era ambientar o projeto para um site de banco, fiz minha pesquis
 de cores entrando em alguns sites para poder me inspirar. Queria uma visualização 
 limpa e prática pois, o que um cliente de banco busca é um serviço rápido e seguro.  
 <p align="center">
-<img src="./imagensreadme/primeiro.jpg" alt="Primeiro protótipo"/>
+<img src="./imagensreadme/primeiro.jpg" alt="Primeiro protótipo" width="300px"/>
 </p>
 O primeiro protótipo teve feedbacks apontando o tipo de fonte e a cor clara, que de
 acordo com possíveis usuários desse projeto, lembravam mais a um blog do que a um 
 site de banco.
 <p align="center">
-<img src="./imagensreadme/segundoprototipo.jpg" alt="Segundo protótipo"/>
+<img src="./imagensreadme/segundoprototipo.jpg" alt="Segundo protótipo" width="300px"/>
 </p>
 O segundo protótipo teve mais feedbacks positivos, onde apontavam a seriedade que a 
 fonte passava e que a cor mais forte os ambientavam em um site de banco.
 <p align="center">
-<img src="./imagensreadme/Group6.png" alt="Logo da Laboratória"/>
+<img src="./imagensreadme/Group6.png" alt="Terceiro protótipo" width="300px"/>
 </p>
 No terceiro protótipo a cor foi escolhida após pesquisas em relação as sensações 
 que ela transmite ao usuário. O verde pode transmitir segurança e a sensação de algo 
