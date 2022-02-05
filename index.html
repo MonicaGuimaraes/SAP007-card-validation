@@ -18,7 +18,7 @@
     <div class="first">
       <img class="first imgg" src="./img/fundoverde.png">
 
-      <div class="validator div">
+      <div class="validator div" id="validator">
         <section>
           <label for="cardnumber" class="cardnumberlabel">Insira o número do cartão:</label>
           <input type="text" id="cardnumber" name="cardnumber" class="cardnumber" placeholder="Seu número de cartão."
@@ -26,10 +26,11 @@
           <p id="span" class="span"></p>
           <button type="submit" id="button1" value="cardnumber" class="button1">CHECAR</button>
           <br><small> O número deve ser escrito sem espaços ou pontuação.</small>
+          
         </section>
       </div>
 
-      <div class="read div">
+      <div id="information" class="read div">
         <section>
           <article>
             <h2>Recebi meu cartão e agora?</h2>
@@ -43,33 +44,22 @@
         </section>
       </div>
 
+      <div class="result" id="resultt">
+        <div id="result">
+
+        </div>
+        <button type="click" class="button2" id="button2">Nova consulta</button>
+      </div>
+
     </div>
 
-    <div class="result" id="result">
-      <button type="click" class="button2">Nova consulta</button>
-    </div>
+    
 
   </main>
 
   <footer>
     <p>Desenvolvido por Mônica</p>
   </footer>
-
-  <!--<script>// Precisei declarar a função aqui pois quando eu a declarava no index.js, 
-      //ela não parecia estar sendo declarada globalmente. E quando eu a chamava 
-      //para o evento onkeypress não funcionava, também não consegui fazer funcionar com evento de escuta keypress o charCode 
-      //ficava riscado e dava como preterido. Não sei se tem algo relacionado ao type module de como o arquivo index 
-      //foi linkado aqui no index.html
-      // const numberNo = document.getElementById("noNumber")
-      function press(event){
-        let x = event.charCode
-        if (x >= 48 && x <= 57) {
-          return true
-        }else{
-          return false
-        }
-      }
-    </script>-->
 
   <script src="index.js" type="module"></script>
 

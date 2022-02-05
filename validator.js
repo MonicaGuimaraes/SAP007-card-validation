@@ -8,7 +8,7 @@ const validator = {
         mask= mask + "#"
       }
      }
-     return mask//, console.log(mask)
+     return mask //, console.log(mask)
    }
 
   ,isValid: function(numeroCartao){
