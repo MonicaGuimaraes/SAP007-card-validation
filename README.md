@@ -7,8 +7,6 @@
 - [3. Considerações gerais](#3-considerações-gerais)
 - [4. UX Design da experiência do usuário](#4-UX-Design-da-experiência-do-usuário)
 - [5. Deploy do Projeto e como utilizar](#5-guias-dicas-e-leituras-complementares)
-- [6. Checklist](#9-checklist)
-
 ---
 
 ## 1. Introdução
@@ -37,7 +35,7 @@ funcionalidade para ocultar todos os dígitos de um cartão, exceto os quatro ú
 
 Este é o fluxograma inicial do projeto: 
 <p align="center">
-<img src="./imagensreadme/projetodiagram.png" alt="Fluxograma da lógica de LUHN"/>
+<img src="./imagensreadme/projetodiagramm.jpg" alt="Fluxograma da lógica de LUHN"/>
 </p>
 
 ---
