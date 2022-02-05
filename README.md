@@ -36,7 +36,7 @@ funcionalidade para ocultar todos os dígitos de um cartão, exceto os quatro ú
 
 Este é o fluxograma inicial do projeto: 
 <p align="center">
-<img src="./imagensreadme/projetodiagram.png" alt="Fluxograma da lógica de LUHN" width="200"/>
+<img src="./imagensreadme/projetodiagram.png" alt="Fluxograma da lógica de LUHN"/>
 </p>
 ---
 
