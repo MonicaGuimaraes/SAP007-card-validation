@@ -36,6 +36,26 @@ const validator = {
     }
 
     // return console.log(cardListRev, sum)
+  },
+
+  bank: function(numeroCart){
+    let bandeira = ''
+    if(numeroCart.charAt(0)==4){
+      bandeira = 'Visa'
+    }
+    if(numeroCart.charAt(0)==3 && numeroCart.charAt(1)==0 && 
+      numeroCart.charAt(2)>=0 && numeroCart.charAt(2)<=5){
+      bandeira = "Diner's Club / Carte Blanche"
+    }
+    if(numeroCart.charAt(0)==3 && numeroCart.charAt(1)==4){
+      bandeira = "American Express"
+    }
+    if(numeroCart.charAt(0)==3 && numeroCart.charAt(1)==6){
+      bandeira = "Diner's Club / International"
+    }
+    if(numeroCart.charAt(0)==3 && numeroCart.charAt(1)==7){
+      bandeira = "American Express"
+    }
   }
 }
 
