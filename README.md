@@ -6,7 +6,7 @@
 - [2. Resumo do projeto](#2-resumo-do-projeto)
 - [3. Considerações gerais](#3-considerações-gerais)
 - [4. UX Design da experiência do usuário](#4-UX-Design-da-experiência-do-usuário)
-- [5. Deploy do Projeto e como utilizar](#5-guias-dicas-e-leituras-complementares)
+- [5. Deploy do Projeto e como utilizar](#5-Deploy-do-Projeto-e-como-utilizar)
 ---
 
 ## 1. Introdução
@@ -82,31 +82,46 @@ foram realizados por 5 pessoas, sendo duas alunas da Laboratória.
 
 Como a proposta era ambientar o projeto para um site de banco, fiz minha pesquisa 
 de cores entrando em alguns sites para poder me inspirar. Queria uma visualização 
-limpa e prática pois, o que um cliente de banco busca é um serviço rápido e seguro.  
+limpa e prática pois, o que um cliente de banco busca é um serviço rápido e seguro.
+
 <p align="center">
 <img src="./imagensreadme/primeiro.jpg" alt="Primeiro protótipo" width="500px"/>
 </p>
+
 O primeiro protótipo teve feedbacks apontando o tipo de fonte e a cor clara, que de
 acordo com possíveis usuários desse projeto, lembravam mais a um blog do que a um 
 site de banco.
+
 <p align="center">
 <img src="./imagensreadme/segundoprototipo.jpg" alt="Segundo protótipo" width="500px"/>
 </p>
+
 O segundo protótipo teve mais feedbacks positivos, onde apontavam a seriedade que a 
 fonte passava e que a cor mais forte os ambientavam em um site de banco.
+
 <p align="center">
 <img src="./imagensreadme/Group6.png" alt="Terceiro protótipo" width="500px"/>
 </p>
+
 No terceiro protótipo a cor foi escolhida após pesquisas em relação as sensações 
 que ela transmite ao usuário. O verde pode transmitir segurança e a sensação de algo 
 digital, que era a ideia que pretendia passar ao desbloquear o cartão sem precisar sair
 de casa ou ligar pelo telefone.
 
+<p align="center">
+<img src="./imagensreadme/logobefavicon.png" alt="Favicon Logo" width="500px"/>
+</p>
 
-### Scripts / Arquivos
+O Favicon tem um símbolo de chip de cartão com um símbolo de 'check' por cima. Muitas das 
+propagandas de bancos digitais hoje em dia mostram a facilidade de receber um cartão de 
+crédito. Por esse motivo o ícone e o logo são baseados em cartões de crédito.
 
-- `REAME.md`: deve explicar como "deployar", instalar e executar a aplicação,
-  assim como uma introdução a aplicação, suas funcionalidades e as decisões que
-  foram tomadas.
+
+## 5. Deploy do Projeto e como utilizar
+
+O deploy do projeto CARTOBANK foi feito no GitHub Pages, sendo assim a utilização do mesmo 
+depende de um navegador web e do link do GitHub Pages:
+
+[Projeto CARTOBANK](https://monicaguimaraes.github.io/SAP007-card-validation/)
 
 ---
