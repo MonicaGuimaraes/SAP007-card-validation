@@ -35,9 +35,10 @@ function getcardnumber() {
     cardNum = (receberNum.value)
     let cardmask = validator.maskify(cardNum)
     let validatorr = validator.isValid(cardNum)
+    let bandeiraa = validator.flag(cardNum)
     if (validatorr) {
       document.getElementById("cardnumber").value = ""
-      result.insertAdjacentHTML("afterbegin", message + cardmask + messageGreen) 
+      result.insertAdjacentHTML("afterbegin", message + cardmask + bandeiraa + messageGreen) 
     } else {
       document.getElementById("cardnumber").value = ""
       result.insertAdjacentHTML('afterbegin' , message + cardmask + messageRed)
