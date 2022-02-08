@@ -1,41 +1,40 @@
 const validator = { 
-   maskify: function(nmber){
+   maskify: function(numberCard){
      let mask = ""
-     for (let ind=0; ind < nmber.length; ind++){
-      if (ind >= ((nmber.length)-4)){
-        mask = mask + nmber.charAt(ind)
+     const fourLastNumbers = 4
+     for (let ind=0; ind < numberCard.length; ind++){
+      if (ind >= (numberCard.length - fourLastNumbers)){
+        mask += numberCard.charAt(ind)
       }else{
-        mask= mask + "#"
+        mask += "#"
       }
      }
-     return mask //, console.log(mask)
-   }
-
-  ,isValid: function(numeroCartao){
-    const cardList = Array.from(numeroCartao)
+     return mask
+   },
+   
+  isValid: function(numberCard){
+    const cardList = Array.from(numberCard)
     let cardListRev = cardList.reverse()
     let sum = 0
+
     for (let i=0; i < cardListRev.length; i++){
-      if (i % 2 != 0){
-        cardListRev[i] = (Number(cardListRev[i])) * 2
-        if(cardListRev[i] > 9){
-          cardListRev[i] = cardListRev[i] - 9
-          sum = sum + Number(cardListRev[i])
-        }else{
-          sum = sum + (cardListRev[i])
+      let digit = Number(cardListRev[i])
+
+      if (i % 2 !== 0){
+        digit = digit * 2
+        if(digit > 9){
+          digit -= 9
         }
-      }else{
-        sum = sum + Number(cardListRev[i])
-      }
+      } 
+        sum += digit
     }
+
     if (sum % 10 == 0){
-      return numeroCartao = true //, console.log("True")
+      return true
 
     }else{
-      return numeroCartao = false //, console.log("False")
+      return false
     }
-
-    // return console.log(cardListRev, sum)
   }
 }
 

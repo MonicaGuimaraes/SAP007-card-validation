@@ -2,120 +2,120 @@ import validator from './validator.js'
 
 const button1 = document.getElementById("button1")
 const button2 = document.getElementById("button2")
-const receberNum = document.getElementById("cardnumber")
+const receiveNum = document.getElementById("input-number")
 const span = document.getElementById("span")
-const result = document.getElementById("result")
+const result = document.getElementById("result-article")
+
 let cardNum
 const messageRed = "<br><p>não é válido. Digite novamente.</p>"
 const messageGreen = "<br><p>é válido. Continue para as próximas etapas.</p>"
 const message = "<p>O número de cartão com final:<br></p>"
 
-function change(){
-  document.getElementById("resultt").style.display = 'none'
-  if (document.getElementById("resultt").style.display == 'none'){
-    document.getElementById("resultt").style.display = 'block'
+function changePageResult(){
+  document.getElementById("result").style.display = 'none'
+  if (document.getElementById("result").style.display == 'none'){
+    document.getElementById("result").style.display = 'block'
     document.getElementById("validator").style.display = 'none'
     document.getElementById("information").style.display = 'none'
   }
 }
-function changerev(){
-  document.getElementById("resultt").style.display = 'block'
-  if (document.getElementById("resultt").style.display == 'block'){
-    document.getElementById("result").textContent = ""
-    document.getElementById("resultt").style.display = 'none'
+function changePageToInitial(){
+  document.getElementById("result").style.display = 'block'
+  if (document.getElementById("result").style.display == 'block'){
+    document.getElementById("result-article").textContent = ""
+    document.getElementById("result").style.display = 'none'
     document.getElementById("validator").style.display = 'block'
     document.getElementById("information").style.display = 'block'  
   }
 }
 
-function flag(numeroCart){
-  let bandeira = ''
-  if(numeroCart.charAt(0)==4){
-    bandeira = ' Visa'
-    return bandeira
+function flag(numbersCard){
+  let flagCard = ''
+  if(numbersCard.charAt(0)==4){
+    flagCard = ' Visa'
+    return flagCard
   }
-  if(numeroCart.charAt(0)==3){
-    if(numeroCart.charAt(0)==3 && numeroCart.charAt(1)==4){
-      bandeira = " American Express"
-      return bandeira
-    }else if(numeroCart.charAt(1)==6){
-      bandeira = " Diner's Club / International"
-      return bandeira
+  if(numbersCard.charAt(0)==3){
+    if(numbersCard.charAt(0)==3 && numbersCard.charAt(1)==4){
+      flagCard = " American Express"
+      return flagCard
+    }else if(numbersCard.charAt(1)==6){
+      flagCard = " Diner's Club / International"
+      return flagCard
     }
-    else if(numeroCart.charAt(1)==7){
-      bandeira = " American Express"
-      return bandeira
+    else if(numbersCard.charAt(1)==7){
+      flagCard = " American Express"
+      return flagCard
     }
-    else if(numeroCart.charAt(1)==8){
-      bandeira = " Diner's Club / Carte Blanche"
-      return bandeira
-    }else if(numeroCart.charAt(1)==0 && numeroCart.charAt(2)>=0 && 
-    numeroCart.charAt(2)<=5){
-      bandeira = " Diner's Club / Carte Blanche"
-      return bandeira
+    else if(numbersCard.charAt(1)==8){
+      flagCard = " Diner's Club / Carte Blanche"
+      return flagCard
+    }else if(numbersCard.charAt(1)==0 && numbersCard.charAt(2)>=0 && 
+    numbersCard.charAt(2)<=5){
+      flagCard = " Diner's Club / Carte Blanche"
+      return flagCard
     }else{
-      bandeira = " JBC"
-      return bandeira
+      flagCard = " JBC"
+      return flagCard
     }
   }  
-  if(numeroCart.charAt(0)==5 && numeroCart.charAt(1)>=1 && 
-  numeroCart.charAt(1)<=5){
-    bandeira = " MasterCard"
-    return bandeira
+  if(numbersCard.charAt(0)==5 && numbersCard.charAt(1)>=1 && 
+  numbersCard.charAt(1)<=5){
+    flagCard = " MasterCard"
+    return flagCard
   }
-  if(numeroCart.charAt(0)==6 && numeroCart.charAt(1)==0 && 
-  numeroCart.charAt(2)==1 && numeroCart.charAt(3)==1){
-    bandeira = " Discover"
-    return bandeira
+  if(numbersCard.charAt(0)==6 && numbersCard.charAt(1)==0 && 
+  numbersCard.charAt(2)==1 && numbersCard.charAt(3)==1){
+    flagCard = " Discover"
+    return flagCard
   }
-  if( numeroCart.charAt(0)==1 && numeroCart.charAt(1)==8 &&
-   numeroCart.charAt(2)==0 && numeroCart.charAt(3)==0){
-    bandeira = " JCB"
-    return bandeira
+  if( numbersCard.charAt(0)==1 && numbersCard.charAt(1)==8 &&
+   numbersCard.charAt(2)==0 && numbersCard.charAt(3)==0){
+    flagCard = " JCB"
+    return flagCard
   }
-  if( numeroCart.charAt(0)==2){
-    if(numeroCart.charAt(1)==1){
-      if(numeroCart.charAt(2)==3 && numeroCart.charAt(3)==1){
-        bandeira = ' JCB'
-        return bandeira
-      }else if(numeroCart.charAt(2)==4 && numeroCart.charAt(3)==9){
-        bandeira = " Diner's Club / enRoute"
-        return bandeira
+  if( numbersCard.charAt(0)==2){
+    if(numbersCard.charAt(1)==1){
+      if(numbersCard.charAt(2)==3 && numbersCard.charAt(3)==1){
+        flagCard = ' JCB'
+        return flagCard
+      }else if(numbersCard.charAt(2)==4 && numbersCard.charAt(3)==9){
+        flagCard = " Diner's Club / enRoute"
+        return flagCard
       }
-    }else if(numeroCart.charAt(1)==0 && numeroCart.charAt(2)==1 && 
-    numeroCart.charAt(3)==4){
-      bandeira = " Diner's Club / enRoute"
-      return bandeira
+    }else if(numbersCard.charAt(1)==0 && numbersCard.charAt(2)==1 && 
+    numbersCard.charAt(3)==4){
+      flagCard = " Diner's Club / enRoute"
+      return flagCard
     }
   }
-  if(numeroCart.charAt(0)==6 && numeroCart.charAt(1)==0 && numeroCart.charAt(2)==6 &&
-  numeroCart.charAt(3)==2){
-    bandeira = " HiperCard"
-    return bandeira
+  if(numbersCard.charAt(0)==6 && numbersCard.charAt(1)==0 && numbersCard.charAt(2)==6 &&
+  numbersCard.charAt(3)==2){
+    flagCard = " HiperCard"
+    return flagCard
   }
-  bandeira = " sem bandeira"
-  return bandeira
+  flagCard = " sem bandeira"
+  return flagCard
 }
 
-function getcardnumber() {
-  if (receberNum.value.length >= 13 && receberNum.value.length <= 16 && Number(receberNum.value)) {
-    change()
+function getCardNumber() {
+  if (receiveNum.value.length >= 13 && receiveNum.value.length <= 16 && Number(receiveNum.value)) {
+    changePageResult()
     document.getElementById("span").textContent = ""
-    cardNum = (receberNum.value)
-    let cardmask = validator.maskify(cardNum)
-    let validatorr = validator.isValid(cardNum)
-    let bandeiraa = flag(cardNum)
-    if (validatorr) {
-      document.getElementById("cardnumber").value = ""
-      result.insertAdjacentHTML("afterbegin", message + cardmask + bandeiraa + messageGreen) 
+    cardNum = (receiveNum.value)
+    let cardMask = validator.maskify(cardNum)
+    let validatorBoolean = validator.isValid(cardNum)
+    let flagStr = flag(cardNum)
+    if (validatorBoolean) {
+      result.insertAdjacentHTML("afterbegin", message + cardMask + flagStr + messageGreen) 
     } else {
-      document.getElementById("cardnumber").value = ""
-      result.insertAdjacentHTML('afterbegin' , message + cardmask + messageRed)
+      result.insertAdjacentHTML('afterbegin' , message + cardMask + messageRed)
     }
+    receiveNum.value = ""
   }else{
     span.textContent = "Digite apenas números. Um cartão deve ter entre 13 a 16 números."
   }
 }
 
-button1.addEventListener("click", getcardnumber)
-button2.addEventListener("click", changerev)
+button1.addEventListener("click", getCardNumber)
+button2.addEventListener("click", changePageToInitial)

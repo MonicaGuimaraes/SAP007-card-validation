@@ -8,41 +8,38 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-  <header>
+<body class="page">
+  <header class="menu">
     <img class="logo" src="img/logob.png">
-    <h1> CARTO BANK
+    <h1 class="titleBank"> CARTO BANK
     </h1>
   </header>
   <main class="first">
     <img class="first imgg" src="./img/fundoverde.png">
 
-    <section class="validator div" id="validator">
+    <section class="validator allSections" id="validator">
 
       <label for="cardnumber" class="cardnumberlabel">Insira o número do cartão:</label>
-      <input type="text" id="cardnumber" name="cardnumber" class="cardnumber" placeholder="Seu número de cartão."
-        required minlength="13" maxlength="16" size="17">
-      <!--onkeypress="return press(event)"-->
+      <input type="text" id="input-number" name="cardNumber" class="input-number" placeholder="Seu número de cartão."
+        required minlength="13" maxlength="16" size="17" autocomplete="false" autocomplete="off">
+      <button type="submit" id="button1" value="input-number" class="button1 animation">CHECAR</button>
+      <p><small> O número deve ser escrito sem espaços ou pontuação.</small></p>
       <p id="span" class="span"></p>
-      <button type="submit" id="button1" value="cardnumber" class="button1 animation">CHECAR</button>
-      <br><small> O número deve ser escrito sem espaços ou pontuação.</small>
 
     </section>
 
-    <section id="information" class="read div">
+    <section id="information" class="read allSections">
       <article>
-        <h2>Recebi meu cartão e agora?</h2>
-        <br>
-        <p>Agora que já está logado em sua conta basta inserir o número do cartão.
+        <h2 class="titleRead">Recebi meu cartão e agora?</h2>
+        <p class="paragraph-read">Agora que já está logado em sua conta basta inserir o número do cartão.
           Após checarmos o número iremos continuar o procedimento.</p>
-        <br>
-        <p>Não precisa sair de casa ou muito menos perder tempo no telefone para desbloquear!
+        <p class="paragraph-read">Não precisa sair de casa ou muito menos perder tempo no telefone para desbloquear!
           Continue seguindo os passos e no final digite sua senha eletrônica de novo!</p>
       </article>
     </section>
 
-    <section class="result" id="resultt">
-      <article id="result">
+    <section class="result" id="result">
+      <article id="result-article">
 
       </article>
       <button type="click" class="button2 animation" id="button2">NOVA CONSULTA</button>
@@ -50,9 +47,9 @@
 
   </main>
 
-  <footer>
-    <p>Desenvolvido por
-      <a class="link" href="https://github.com/MonicaGuimaraes">Mônica</a>.
+  <footer class="baseboard">
+    <p class="paragraph-footer">Desenvolvido por
+      <a class="link" target= "_blank" href="https://github.com/MonicaGuimaraes">Mônica</a>
     </p>
   </footer>
 
