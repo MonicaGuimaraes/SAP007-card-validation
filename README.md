@@ -1,4 +1,11 @@
 # Projeto: Cartão de Crédito Válido da Laboratória
+<div align="center">
+  <img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="Figma" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
+  <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="VSCode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
+</div>
 
 ## Índice
 
@@ -125,3 +132,62 @@ depende de um navegador web e do link do GitHub Pages:
 [Projeto CARTOBANK](https://monicaguimaraes.github.io/SAP007-card-validation/)
 
 ---
+
+## 3. Objetivos de aprendizagem
+
+### HTML
+
+- **Uso de HTML semântico**
+
+
+### CSS
+
+- **Uso de seletores de CSS**
+
+- **Empregar o modelo de caixa (box model): borda, margem, preenchimento**
+
+### Web APIs
+
+- **Uso de seletores de DOM**
+- **Gerenciamento de eventos de DOM**
+- **Manipulação dinâmica de DOM**
+
+### JavaScript
+
+- **Tipos de dados primitivos**
+
+- **Strings (cadenas de caracteres)**
+- 
+- **Variáveis (declaração, atribuição, escopo)**
+
+-  **Uso de condicionais (if-else, switch, operador ternário)**
+
+-  **Uso de laços (for, for..of, while)**
+
+-  **Uso de funções (parâmetros, argumentos, valor de retorno)**
+
+- **Testes unitários**
+
+- **Uso ES modules**
+
+- **Uso de linter (ESLINT)**
+
+- **Uso de identificadores descritivos (Nomenclatura | Semântica)**
+
+### Git e GitHub
+
+- **Git: Instalação e configuração**
+
+- **Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)**
+
+- **GitHub: Criação de contas e repositórios, configuração de chave SSH**
+
+- **GitHub: Implantação com GitHub Pages**
+
+### UX (User eXperience)
+
+- **Desenhar a aplicação pensando e entendendo o usuário**
+
+- **Criar protótipos para obter feedback e iterar**
+
+- **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
